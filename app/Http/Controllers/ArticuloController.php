@@ -88,7 +88,6 @@ class ArticuloController extends Controller
         $articulo->so = $request -> so;
         $articulo->stock = $request -> stock;
         $articulo->precio = $request -> precio;
-        $articulo->serial = $request -> serial;
         $articulo->sku = $request -> sku;
 
         $articulo ->save();

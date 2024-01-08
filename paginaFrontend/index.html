@@ -36,8 +36,7 @@
                         <th class="white--text">DESCRIPCIÓN</th>
                         <th class="white--text">SO</th>
                         <th class="white--text">STOCK</th>
-                        <th class="white--text">PRECIO</th>
-                        
+                        <th class="white--text">PRECIO</th>                        
                         <th class="white--text">SKU</th>
                         <th class="white--text text-center">ACCIONES</th>
                     </tr>
@@ -49,8 +48,7 @@
                     <td>{{ articulo.descripcion }}</td>
                     <td>{{ articulo.so }}</td>
                     <td>{{ articulo.stock }}</td>
-                    <td>{{ articulo.precio }}</td>
-                    
+                    <td>{{ articulo.precio }}</td>                    
                     <td>{{ articulo.sku }}</td>
                     <td>
                         <v-btn fab dark color="#00BCD4" small @click="formEditar(articulo.id, articulo.tipo, articulo.descripcion, articulo.so, articulo.stock, articulo.precio, articulo.sku)"><v-icon>mdi-pencil</v-icon></v-btn>
@@ -153,8 +151,7 @@
                   descripcion:this.articulo.descripcion, 
                   so:this.articulo.so, 
                   stock:this.articulo.stock, 
-                  precio:this.articulo.precio,
-                  
+                  precio:this.articulo.precio,                  
                   sku:this.articulo.sku
                  };                
                 axios.post(url, parametros)
@@ -165,8 +162,7 @@
                 this.articulo.descripcion="";
                 this.articulo.so="";
                 this.articulo.stock="";
-                this.articulo.precio="";
-                
+                this.articulo.precio="";                
                 this.articulo.sku="";
                 
             },                        
@@ -176,8 +172,7 @@
               descripcion:this.articulo.descripcion, 
               so:this.articulo.so, 
               stock:this.articulo.stock, 
-              precio:this.articulo.precio,
-              
+              precio:this.articulo.precio,              
               sku:this.articulo.sku,          
               id:this.articulo.id};                            
             //console.log(parametros);                   
